@@ -1,17 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mac Book Pro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="container">Hello World</h1>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Product Section  -->
+    <div class="container my-5">
+      <div class="row g-5">
+        <!-- Product Image Area Start -->
+        <div class="col-md-5">
+          <div class="product-img">
+            <img
+              class="img-fluid float-none float-md-end mx-auto d-block"
+              width="80%"
+              src="images/mac.png"
+              alt="iMac"
+            />
+          </div>
+        </div>
+        <!-- Product Image Area End -->
+
+        <!-- Product Info Area End -->
+        <div class="col-md-7">
+          <!-- Product Addons Area Start  -->
+          <div class="product-info">
+            <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p>
+              Apple M1 chip with 8-core CPU with 4 performance cores and 4
+              efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB
+              unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports
+              Magic Mouse Magic Keyboard - US English
+            </p>
+            <div class="product-addons my-4">
+              <p class="mb-1 fw-bold">Memory</p>
+              <button type="button" class="btn btn-outline-dark">
+                8GB unified memory
+              </button>
+              <button type="button" class="btn btn-outline-dark">
+                16GB unified memory
+              </button>
+            </div>
+            <div class="product-addons my-4">
+              <p class="mb-1 fw-bold">Storage</p>
+              <button type="button" class="btn btn-outline-dark">
+                256GB SSD storage
+              </button>
+              <button type="button" class="btn btn-outline-dark">
+                512GB SSD storage
+              </button>
+              <button type="button" class="btn btn-outline-dark">
+                1TB SSD storage
+              </button>
+            </div>
+            <div class="product-addons my-4">
+              <p class="mb-1 fw-bold">Choose your delivery option</p>
+              <button type="button" class="btn btn-outline-dark">
+                Friday, Aug 25 FREE Prime Delivery
+              </button>
+              <button type="button" class="btn btn-outline-dark">
+                Friday, Aug 21 Delivery charge $20
+              </button>
+            </div>
+          </div>
+          <!-- Products Addons Area End  -->
+
+          <!-- Sub Total Area Start  -->
+          <div class="sub-total my-4">
+            <table class="table w-50 fw-bold">
+                <tbody>
+                    <tr>
+                        <td scope="row"">Best Price</td>
+                        <td scope="row"">$1299</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Extra Memory Cost</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Delivery charge</td>
+                        <td>$0</td>
+                    </tr> 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td scope="col">Total Price</td>
+                        <td scope="col">$1299</td>
+                    </tr>
+                </tfoot>   
+            </table>
+          </div>
+          <!-- Sub Total Area End  --> 
+          <div class="product-pomo my-4 w-50">
+            <p class="mb-1 fw-bold">Add Promo Code</p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Promo Code"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <button
+                class="btn input-group-text bg-danger text-white"
+                id="basic-addon2"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Main Info Area End -->
+      </div>
+      <hr />
+      <!-- Total Price Area Start  -->
+      <div class="total text-center">
+        <h1>Total: <span>$1299</span></h1>
+      </div>
+      <!-- Total Price Area End  -->
+    </div>
+    <!-- Product Section  -->
 
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
