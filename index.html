@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mac Book Pro</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <title>iMac Book Pro</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,12 +16,7 @@
         <!-- Product Image Area Start -->
         <div class="col-md-5">
           <div class="product-img">
-            <img
-              class="img-fluid float-none float-md-end mx-auto d-block"
-              width="80%"
-              src="images/mac.png"
-              alt="iMac"
-            />
+            <img class="img-fluid float-none float-md-end mx-auto d-block" width="80%" src="images/mac.png" alt="iMac"/>
           </div>
         </div>
         <!-- Product Image Area End -->
@@ -41,31 +34,31 @@
             </p>
             <div class="product-addons my-4">
               <p class="mb-1 fw-bold">Memory</p>
-              <button type="button" class="btn btn-outline-dark">
+              <button id="memory-8gb" type="button" class="btn btn-outline-dark">
                 8GB unified memory
               </button>
-              <button type="button" class="btn btn-outline-dark">
+              <button id="memory-16gb" type="button" class="btn btn-outline-dark">
                 16GB unified memory
               </button>
             </div>
             <div class="product-addons my-4">
               <p class="mb-1 fw-bold">Storage</p>
-              <button type="button" class="btn btn-outline-dark">
+              <button id="storage-256gb" type="button" class="btn btn-outline-dark">
                 256GB SSD storage
               </button>
-              <button type="button" class="btn btn-outline-dark">
+              <button id="storage-512gb" type="button" class="btn btn-outline-dark">
                 512GB SSD storage
               </button>
-              <button type="button" class="btn btn-outline-dark">
+              <button id="storage-1tb" type="button" class="btn btn-outline-dark">
                 1TB SSD storage
               </button>
             </div>
             <div class="product-addons my-4">
               <p class="mb-1 fw-bold">Choose your delivery option</p>
-              <button type="button" class="btn btn-outline-dark">
+              <button id="prime-delivery" type="button" class="btn btn-outline-dark">
                 Friday, Aug 25 FREE Prime Delivery
               </button>
-              <button type="button" class="btn btn-outline-dark">
+              <button id="fast-delivery" type="button" class="btn btn-outline-dark">
                 Friday, Aug 21 Delivery charge $20
               </button>
             </div>
@@ -77,22 +70,26 @@
             <table class="table w-50 fw-bold">
                 <tbody>
                     <tr>
-                        <td scope="row"">Best Price</td>
-                        <td scope="row"">$1299</td>
+                        <td>Best Price</td>
+                        <td>$<span id="basic-price">1299</span></td>
                     </tr>
                     <tr>
-                        <td scope="row">Extra Memory Cost</td>
-                        <td>$0</td>
+                        <td>Extra Memory Cost</td>
+                        <td>$<span id="memory-price">0</span></td>
                     </tr>
                     <tr>
-                        <td scope="row">Delivery charge</td>
-                        <td>$0</td>
+                      <td>Extra Storage Cost</td>
+                      <td>$<span id="storage-price">0</span></td>
+                  </tr>
+                    <tr>
+                        <td>Delivery charge</td>
+                        <td>$<span id="delivery-price">0</span></td>
                     </tr> 
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td scope="col">Total Price</td>
-                        <td scope="col">$1299</td>
+                        <td>Total Price</td>
+                        <td>$<span id="basic-subtotal">1299</span></td>
                     </tr>
                 </tfoot>   
             </table>
@@ -101,17 +98,8 @@
           <div class="product-pomo my-4 w-50">
             <p class="mb-1 fw-bold">Add Promo Code</p>
             <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Promo Code"
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              />
-              <button
-                class="btn input-group-text bg-danger text-white"
-                id="basic-addon2"
-              >
+              <input id="promo-code" type="text" class="form-control" placeholder="Code" />
+              <button class="btn input-group-text bg-danger text-white" id="promo-code-click">
                 Apply
               </button>
             </div>
@@ -122,12 +110,11 @@
       <hr />
       <!-- Total Price Area Start  -->
       <div class="total text-center">
-        <h1>Total: <span>$1299</span></h1>
+        <h1>Total: $<span id="total">1299</span></h1>
       </div>
       <!-- Total Price Area End  -->
     </div>
     <!-- Product Section  -->
-
     <script src="app.js"></script>
   </body>
 </html>
